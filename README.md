@@ -1,1 +1,7 @@
-# team_timesheet_summary
+# Team timesheet summary
+
+## Background
+This project is aimed at improving awareness of project progress and resource utilisation within a structural engineering team at my workplace. The aim of this project is to aggregate project time allocations and costs from each individual engineer and provide a summary for the team on a given basis (ideally realtime but will begin with batch processing intially e.g. daily reports). This project surfaced because each member of the team has their own respective CSV timesheet file in which they store project data, hours spent on a given project and rates charged to clients but only populate their Oracle timesheets, that sends out the team summary, at the end of every month. This results in individuals not being aware of the rest of the teams contributions to the team until the end of the month, which can lead to over/under allocation of resources to projects or going over budget. As such, this project will aim to provide clarity and insight into how individuals are allocating time, allowing the team to more intelligently allocate engineers to projects and managing budgets. 
+
+## Project outline
+This project will involve developing an ETL batch processing pipeline to read data from several CSV files, extract the relevant data from the files, aggregate the time and budget allocations to each project for all engineers of the team and load the summary for the day into a database. This summary entry will then be extracted by a separate process to update the overall project progress. Note: this outline is subject to change, architecture and design is flexible 
